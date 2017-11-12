@@ -1,26 +1,7 @@
-<? // Template Name: Single Page ?>
+<? // Template Name: File List ?>
 
 <?php get_header(); ?>
 
-<img src="<? echo get_template_directory_uri(); ?>/images/AISWCDLogo.png" alt="">
-<hr>
-<!-- mobile nav -->
-<nav class="d-lg-none navbar navbar-expand-lg navbar-light bg-light">
-    <div></div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <? /* Primary navigation */
-    wp_nav_menu( array(
-        'menu' => 'quick_links',
-        'menu_class' => 'nav navbar-nav',
-        'container_class' => 'collapse navbar-collapse',
-        'container_id' => 'navbarNavDropdown',
-        'depth' => 2,
-        'walker' => new wp_bootstrap_navwalker())
-    );
-    ?>
-</nav>
 <div class="container" id="single-page-container">
     <div class="row">
         <div class="col-lg-3">
@@ -106,3 +87,4 @@
         <? get_sidebar() ?>
     </div>
 </div>
+<?php get_footer(); ?>
