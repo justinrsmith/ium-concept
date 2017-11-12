@@ -1,4 +1,4 @@
-<div id="sidebar" class="col-lg-2 offset-lg-1 d-none d-sm-block">
+<div id="sidebar" class="col-lg-2 d-none d-sm-block">
     <h5>Quick Links</h5>
     <? /* Primary navigation */
         wp_nav_menu( array(

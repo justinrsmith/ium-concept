@@ -10,40 +10,16 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Practice Standards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Construction Specifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Material Specifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Standard Drawings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">IUM Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Field Manual</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Quick Links
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Active</a>
-                            <a class="dropdown-item" href="#">Link</a>
-                            <a class="dropdown-item" href="#">Link</a>
-                            <a class="dropdown-item" href="#">Disabled</a>
-                        </nav><br>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <? /* Primary navigation */
+            wp_nav_menu( array(
+                'menu' => 'quick_links',
+                'menu_class' => 'nav navbar-nav',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id' => 'navbarNavDropdown',
+                'depth' => 2,
+                'walker' => new wp_bootstrap_navwalker())
+            );
+            ?>
         </nav>
 
         <div class="container-fluid" id="search-container">
@@ -51,7 +27,7 @@
                 <h1>Illinois Urban Manual</h1>
                 <p class="lead text-muted">Funding source for the IUM update initiative is provided by the Illinois Environmental Protection Agency (IEPA) Clean Water Act, Section 604b grant funds.</p>
                 <img height="139" width="137" src="<?php echo get_template_directory_uri(); ?>/images/ium_logo.png" alt="">
-                <div class="input-group">
+                <div class="col-lg-8 offset-lg-2 col-xs-12 input-group">
                     <input type="text" class="form-control" placeholder="Search the Illinois Urban Manual" aria-label="" aria-describedby="search-button">
                     <button class="input-group-addon" id="search-button">Search</button>
                 </div>
@@ -102,63 +78,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="border-radius: 10px; padding: 10px; background-color: #f8f8f8;">
+                    <div class="row" id="section-appendix-container">
                         <div class="col-lg">
                             <div class="row">
                                 <h4>Sections</h4>
                             </div>
-                            <div id="sections">
-                                <div class="row">
-                                    <p>
-                                        <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Introduction/Preface</a><br>
-                                        <small>Last Updated: Mar 25, 2017</small><br>
-                                    </p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                        <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Non-point Source Pollution Control Processes and Planning Principles</a></strong><br>
-                                        <small>Last Updated: Mar 25, 2017</small>
-                                    </p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Planning Procedures</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="ium2-standard.html">Practice Standards</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#">Construction Specifications</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#">Material Specification</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#">Standard Drawings</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Evaluation</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> References</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Glossary</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
+                            <div class="row">
+                                <div id="sections">
+                                    <div class="list-group">
+                                        <?
+                                        $args = array(
+                                            'post_type' => 'sections',
+                                            'orderby' => the_field('section_number'),
+                                            'order' => 'ASC'
+                                        );
+                                        $the_query = new WP_Query( $args );
+                                        ?>
+                                        <? if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                            <a target="_blank" href="<? !the_field('pdf_to_link') ? the_field('page_to_link') : the_field('pdf_to_link') ?>" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1"><? if (get_field('pdf_to_link')): ?><i class="fa fa-file-pdf-o" aria-hidden="true"><? endif; ?></i> <? the_title() ?></h6>
+                                                </div>
+                                                <small><? echo get_the_date() ?></small>
+                                            </a>
+                                        <? endwhile; else: ?> <p>Sorry, there are no sections to display</p> <? endif; ?>
+                                        <? wp_reset_query(); ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -166,50 +111,36 @@
                             <div class="row">
                                 <h4>Appendix</h4>
                             </div>
-                            <div id="appendix">
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> NPDES – Permits for Construction Site Stormwater Discharge</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Soil Quality – Urban Technical Notes</a></strong><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Methods for Establishing Receiving Water Quality Impacts of Urban and Suburban Development</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> NPDES Phase II Stormwater Permit Program for Small Municipal Separate Storm Sewer Systems (MS4s)</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Sample Natural Resource Protection Ordinances</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> USDA Programs – Applicable to Urban or Urbanizing Areas</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
-                                </div>
-                                <div class="row">
-                                    <p>
-                                    <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Grant Information Summary for Conservation Projects</a><br>
-                                    <small>Last Updated: Mar 25, 2017</small></p>
+                            <div class="row">
+                                <div id="appendix">
+                                    <div class="list-group">
+                                        <?
+                                        $args = array(
+                                            'post_type' => 'appendix',
+                                            'orderby' => the_field('appendix_letter'),
+                                            'order' => 'ASC'
+                                        );
+                                        $the_query = new WP_Query( $args );
+                                        ?>
+                                        <? if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                            <a target="_blank" href="<? the_field('pdf_to_link')?>" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h6 class="mb-1"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <? the_title() ?></h6>
+                                                </div>
+                                                <small><? echo get_the_date() ?></small>
+                                            </a>
+                                        <? endwhile; else: ?> <p>Sorry, there are no sections to display</p> <? endif; ?>
+                                        <? wp_reset_query(); ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg"></div>
                 <? get_sidebar() ?>
             </div>
         </div>
         <?php get_footer(); ?>
     </body>
-
 </html>
