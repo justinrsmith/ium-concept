@@ -41,9 +41,12 @@ h1 {
     color: #068C3F;
     font-weight: 600;
 }
-nav a {
+ul.nav a {
     font-size: 78%;
     padding-left: 8px!important;
+}
+ul.nav li {
+    min-width: 100%;
 }
 #sidebar {
     padding: 0px;

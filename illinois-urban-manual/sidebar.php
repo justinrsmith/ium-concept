@@ -1,18 +1,16 @@
 <div id="sidebar" class="col-lg-2 offset-lg-1 d-none d-sm-block">
     <h5>Quick Links</h5>
-    <nav class="nav flex-column">
-        <a class="nav-link active" href="#">Practice Standards</a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-link" href="#">Construction Specifications</a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-link" href="#">Material Specifications</a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-link" href="#">Standard Drawings</a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-link" href="#">IUM Gallery</a>
-        <div class="dropdown-divider"></div>
-        <a class="nav-link" href="#">Field Manual</a>
-    </nav><br>
+    <? /* Primary navigation */
+        wp_nav_menu( array(
+            'menu' => 'quick_links',
+            'container' => false,
+            'menu_class' => 'nav',
+            'after' => '<div class="dropdown-divider"></div>',
+            //Process nav menu using our custom nav walker
+            'walker' => new wp_bootstrap_navwalker())
+        );
+    ?>
+    <br>
     <h5>Resources</h5>
     <nav class="nav flex-column">
         <a class="nav-link active" href="#">Active</a>
