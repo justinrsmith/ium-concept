@@ -13,7 +13,7 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div id="layout-row" class="row">
         <div class="col-lg-9">
             <div class="row">
                 <div id="latest-news" class="col-lg">
@@ -75,9 +75,9 @@
                                 <? if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                                     <a href="<? !the_field('pdf_to_link') ? the_field('page_to_link') : the_field('pdf_to_link') ?>" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h6 class="mb-1 section-title"><? if (get_field('pdf_to_link')): ?><i class="fa fa-file-pdf-o" aria-hidden="true"><? endif; ?></i> <? the_title() ?></h6>
+                                            <h6 class="mb-1 section-title"><? the_title() ?><? if (get_field('pdf_to_link')): ?> <i class="fa fa-file-pdf-o" aria-hidden="true"></i><? endif; ?></h6>
                                         </div>
-                                        <small><? echo get_the_date() ?></small>
+                                        <small class="text-muted"><? echo get_the_date() ?></small>
                                     </a>
                                 <? endwhile; else: ?> <p>Sorry, there are no sections to display</p> <? endif; ?>
                                 <? wp_reset_query(); ?>
@@ -103,9 +103,9 @@
                                 <? if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                                     <a href="<? the_field('pdf_to_link')?>" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h6 class="mb-1 appendix-title"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <? the_title() ?></h6>
+                                            <h6 class="mb-1 appendix-title"><? the_title() ?> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
                                         </div>
-                                        <small><? echo get_the_date() ?></small>
+                                        <small class="text-muted"><? echo get_the_date() ?></small>
                                     </a>
                                 <? endwhile; else: ?> <p>Sorry, there are no sections to display</p> <? endif; ?>
                                 <? wp_reset_query(); ?>

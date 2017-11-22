@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-lg-3">
             <div class="card bg-light mb-3">
-                <div class="card-header">Related Documents</div>
+                <div class="card-header">Additional Information</div>
                 <div class="card-body">
                     <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Introduction</a><br>
                     <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Urban Standards List</a>
