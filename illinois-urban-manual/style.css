@@ -42,11 +42,11 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 100%;
 }
 #sections h6 {
-    color: #068C3F;
+    color: #068C3F!important;
     font-weight: 600;
 }
 #appendix h6 {
-    color: #068C3F;
+    color: #068C3F!important;
     font-weight: 600;
 }
 #sidebar ul.nav a {

@@ -80,6 +80,16 @@
                                         <small class="text-muted"><? echo get_the_date() ?></small>
                                     </a>
                                 <? endwhile; else: ?> <p>Sorry, there are no sections to display</p> <? endif; ?>
+                                  <a href="http://localhost:8000/wp-content/uploads/2018/03/urbse_31.pdf" class="list-group-item list-group-item-action flex-column align-items-start">
+                                      <div class="d-flex w-100 justify-content-between">
+                                          <h6 class="mb-1 section-title">Planning Procedures <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                      </div>
+                                      <p class="mb-1">Introduction</p>
+                                      <p class="mb-1">Planning Process</p>
+                                      <p class="mb-1">Criteria for BMP Selection</p>
+                                      <p class="mb-1">Practices and Systems</p>
+                                      <small class="text-muted"><? echo get_the_date() ?></small>
+                                  </a>
                                 <? wp_reset_query(); ?>
                             </div>
                         </div>
