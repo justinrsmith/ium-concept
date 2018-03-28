@@ -1,41 +1,11 @@
-<div id="sidebar" class="col-lg-2 d-none d-sm-block">
-    <h5>Quick Links</h5>
+<!-- https://v4-alpha.getbootstrap.com/examples/dashboard/ -->
+<div id="sidebar" class="px-1 col-md-2 d-none d-md-block">
+    <h4 class="mt-2" id="sidebar-header">Quick Links</h4>
     <? /* Primary navigation */
         wp_nav_menu( array(
             'menu' => 'quick_links',
-            'container' => false,
-            'menu_class' => 'nav',
-            'after' => '<div class="dropdown-divider"></div>',
-            //Process nav menu using our custom nav walker
+            'menu_class' => 'nav flex-column',
             'walker' => new wp_bootstrap_navwalker())
         );
     ?>
-    <br>
-    <h5>Resources</h5>
-    <ul class="nav flex-column">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <div class="dropdown-divider"></div>
-    </ul><br>
 </div>
