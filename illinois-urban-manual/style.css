@@ -17,10 +17,39 @@ body {
     /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
 }
+h1, h2, h3, h4, h5 {
+    /* blue font */
+    /* color: #039BE5; */
+
+    /* dark brown */
+    /* color: #5D4037 */
+
+    /* green font */
+    /* color: #4DB6AC; */
+
+    /* orange font */
+    /* color: #FF8A65; */
+
+    /* light green */
+    /* color: #4DB6AC; */
+}
 
 /* Navigation */
 .navbar {
-    background-color: #80D8FF; /* #40C4FF */
+    /* light blue */
+    /* background-color: #80D8FF; */
+
+    /* light brown */
+    /* background-color: #D7CCC8; */
+
+    /* darker blue */
+    /* background-color: #7986CB; */
+
+    /* orange */
+    /* background-color: #FF8A65; */
+
+    /* light red */
+    /* background-color: #e57373; */
 }
 .navbar-brand {
     margin-left: -12px;

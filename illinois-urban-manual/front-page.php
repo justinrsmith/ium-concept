@@ -41,24 +41,34 @@
                 <div class="col">
                     <h4>Announcements</h4>
                     <hr>
-                    <? if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <div class="news-item">
-                            <div class="row">
-                                <div class="col">
-                                    <h5><a href="<? the_permalink(); ?>"><? the_title() ?></a></h5>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <? the_excerpt() ?>
-                                </div>
-
-                            </div>
-                        </div>
-                    <? endwhile; endif; ?>
                     <div class="row">
-                        <div class="col">
+                        <?
+                            $the_query = new WP_Query( array(
+                                'posts_per_page' => 4,
+                            ));
+                            if ( $the_query->have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="mb-0"><a href="<? the_permalink(); ?>"><? the_title() ?></a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <small><strong><? echo get_the_date(); ?></strong></small>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <? the_excerpt() ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <? endwhile; endif;
+                        ?>
+                    </div>
+                    <div class="row">
+                        <div class="col text-right">
                             <a href="#">View All News</a>
                         </div>
                     </div>

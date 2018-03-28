@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title><? bloginfo( 'name' ) ?></title>
         <!-- Required meta tags -->
@@ -15,7 +15,7 @@
         <div class="px-0 col">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
-                    <img src="<? echo get_theme_file_uri( 'assets/images/AISWCDLogo.png' ); ?>" width="250" alt="">
+                    <img src="<? echo get_theme_file_uri( 'assets/images/AISWCDLogo.png' ); ?>" width="250" alt="AISWCD Organization Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
