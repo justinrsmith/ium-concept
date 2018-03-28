@@ -7,28 +7,40 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: illinoisurbanmanual
 Version: 0.1
 */
+/* Main template */
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
     background-color: #EEEEEE;
+    /* Margin bottom is equal to footer height (below). */
+    margin-bottom: 120px;
 }
 
-/* #40C4FF */
+/* Navigation */
 .navbar {
-    background-color: #80D8FF;
+    background-color: #80D8FF; /* #40C4FF */
 }
-#navbar-search {
-    min-width: 300px;
+.navbar-brand {
+    margin-left: -12px;
 }
-
+#header-search {
+    min-width: 315px;
+}
 #sidebar {
     background-color: #E0E0E0;
     max-width: 275px;
     border-right: 1px solid rgba(0,0,0,.1);
+    /* -240px because 120 top nav/120 footer  */
+    min-height: calc(100vh - 240px);
 }
 #sidebar div ul li a.nav-link{
     padding-left: 0px;
     padding-right: 0px;
 }
 
+/* Section/Appendicies */
 .list-group-item {
     background-color: #F5F5F5;
 }
@@ -36,6 +48,12 @@ body {
     background-color: #E0E0E0;
 }
 
-footer {
-    background-color: #80D8FF;
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 120px;
+  background-color: #80D8FF;
 }
