@@ -1,6 +1,7 @@
 <?
 /* enqueue styles and scripts */
 wp_enqueue_style( 'style', get_stylesheet_uri() );
+wp_enqueue_style( 'carouselfade_css', get_template_directory_uri() . '/carousel-fade.css' );
 
 // Help with using bootstrap for menus
 // https://github.com/wp-bootstrap/wp-bootstrap-navwalker

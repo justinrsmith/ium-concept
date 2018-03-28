@@ -17,7 +17,7 @@ body {
     /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     /* blue font */
     /* color: #039BE5; */
 
@@ -28,10 +28,11 @@ h1, h2, h3, h4, h5 {
     /* color: #4DB6AC; */
 
     /* orange font */
-    /* color: #FF8A65; */
+    color: #FF8A65;
 
     /* light green */
     /* color: #4DB6AC; */
+
 }
 
 /* Navigation */
@@ -43,10 +44,10 @@ h1, h2, h3, h4, h5 {
     /* background-color: #D7CCC8; */
 
     /* darker blue */
-    /* background-color: #7986CB; */
+    /* background-color: #5C6BC0; */
 
     /* orange */
-    /* background-color: #FF8A65; */
+    background-color: #FF8A65;
 
     /* light red */
     /* background-color: #e57373; */
@@ -69,6 +70,11 @@ h1, h2, h3, h4, h5 {
     padding-right: 0px;
 }
 
+#carousel-front {
+    width: 450;
+    height: 336;
+}
+
 /* Section/Appendicies */
 .list-group-item {
     background-color: #F5F5F5;
@@ -84,5 +90,5 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 120px;
-  background-color: #80D8FF;
+  background-color: #FF8A65;
 }
