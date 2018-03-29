@@ -17,40 +17,30 @@ body {
     /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
 }
+a {
+    color: #3344dd;
+}
 h1, h2, h3, h4 {
-    /* blue font */
-    /* color: #039BE5; */
-
-    /* dark brown */
-    /* color: #5D4037 */
+    /* green font */
+    color: #00897B;
 
     /* green font */
-    /* color: #4DB6AC; */
+    /* color: #009688; */
 
-    /* orange font */
-    color: #FF8A65;
-
-    /* light green */
-    /* color: #4DB6AC; */
-
+    /* blue font */
+    /* color: #039BE5; */
 }
 
 /* Navigation */
 .navbar {
-    /* light blue */
-    /* background-color: #80D8FF; */
+    /* darker blue */
+    background-color: #01579B;
 
     /* light brown */
     /* background-color: #D7CCC8; */
 
-    /* darker blue */
-    /* background-color: #5C6BC0; */
-
-    /* orange */
-    background-color: #FF8A65;
-
-    /* light red */
-    /* background-color: #e57373; */
+    /* light blue */
+    /* background-color: #80D8FF; */
 }
 .navbar-brand {
     margin-left: -12px;
@@ -59,9 +49,14 @@ h1, h2, h3, h4 {
     min-width: 315px;
 }
 #sidebar {
+    /* base */
     background-color: #E0E0E0;
+    /* dark brown */
+    /* background-color: #EFEBE9; */
     max-width: 275px;
+    /* base border */
     border-right: 1px solid rgba(0,0,0,.1);
+    /* border-right: 1px solid #D7CCC8; */
     /* -240px because 120 top nav/120 footer  */
     min-height: calc(100vh - 240px);
 }
@@ -73,6 +68,10 @@ h1, h2, h3, h4 {
 #carousel-front {
     width: 450;
     height: 336;
+}
+
+#newsletter-card {
+    background-color: #F5F5F5;
 }
 
 /* Section/Appendicies */
@@ -90,5 +89,32 @@ h1, h2, h3, h4 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 120px;
-  background-color: #FF8A65;
+  background-color: #01579B;
+}
+
+/* Bootstrap styles, make buttons web accessible */
+/* Move to a different stylesheet? */
+.btn-primary {
+    color: #fff!important;
+    background-color: #0055b0!important;
+    border-color: #0055b0!important;
+}
+
+.btn-outline-primary {
+    color: #0055b0!important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #0055b0!important;
+}
+
+.btn-info {
+    color: #fff!important;
+    background-color: #0c5c68!important;
+    border-color: #0c5c68!important;
+}
+.btn-outline-info {
+    color: #0c5c68;
+    background-color: transparent;
+    background-image: none;
+    border-color: #0c5c68;
 }

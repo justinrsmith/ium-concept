@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
                     <h1>Illinois Urban Manual</h1>
-                    <p id="text-description" class="lead text-muted">Funding source for the IUM update initiative is provided by the Illinois Environmental Protection Agency (IEPA) Clean Water Act, Section 604b grant funds.</p>
+                    <p id="text-description" class="lead">Funding source for the IUM update initiative is provided by the Illinois Environmental Protection Agency (IEPA) Clean Water Act, Section 604b grant funds.</p>
                     <img height="139" width="137" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
                 </div>
                 <!-- Carousel currently only shows on large or greater viewport, save space for mobile/tablets. -->
@@ -28,16 +28,17 @@
                 </div>
                 <!-- Main content search bar only shows when viewport less than large, easier for mobile/tablets. -->
                 <div class="col-md-12 d-lg-none my-3">
-                    <form>
-                        <div class="row align-items-center">
-                            <div class="col-8 offset-1">
-                                <input type="text" class="form-control" placeholder="First name">
+                    <form class="mt-4">
+                        <div class="form-row align-items-center">
+                            <div class="col-8 offset-sm-1">
+                                <input aria-label="Search" type="text" class="form-control" placeholder="Search">
                             </div>
                             <div class="col-2">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
             <div class="row px-2">
@@ -67,7 +68,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <? the_excerpt() ?>
+                                            <small><? echo my_trim_excerpt( $post->post_content, 20 ); ?></small>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col">
+                                            <a href="#">Continue reading...</a>
                                         </div>
                                     </div>
                                 <? };
@@ -78,18 +84,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg col-md-12 mt-md-2 mt-lg-5 mt-xl-5 px-1">
-                            <div class="card">
+                        <div class="col-lg col-md-12 mt-md-2 mt-lg-5 mt-xl-5">
+                            <div id="newsletter-card" class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">JOIN OUR NEWSLETTER</h4>
-                                    <h6 class="card-subtitle mb-2 text-muted">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
+                                    <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER</h4>
+                                    <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
                                     <form class="mt-4">
-                                        <div class="form-row">
-                                            <div class="col-10 col-lg-9">
+                                        <div class="form-row align-items-center">
+                                            <div class="col-8 col-lg-9">
                                                 <input class="form-control" type="email" placeholder="Please provide a valid email address" aria-label="Search">
                                             </div>
                                             <div class="col-2">
-                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+                                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
                                     </form>
@@ -153,14 +159,13 @@
                         </div>
                     </div> -->
                 </div>
-
             </div>
-            <div class="row mt-4 mb-4">
+            <div class="row mt-4 mb-4 px-2">
                 <div class="col">
                     <h4>Illinois Urban Manual Contents</h4>
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-xs-12 col-md-6">
                             <h5>Sections</h5>
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">
@@ -195,7 +200,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-xs-12 col-md-6">
                             <h5>Appendices</h5>
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">

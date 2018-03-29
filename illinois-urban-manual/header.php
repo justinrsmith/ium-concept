@@ -53,7 +53,7 @@
                     <div class="d-none d-lg-block">
                         <form class="form-inline">
                             <input id="header-search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
                     </div>
 

@@ -7,6 +7,15 @@ wp_enqueue_style( 'carouselfade_css', get_template_directory_uri() . '/carousel-
 // https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 require_once('wp-bootstrap-navwalker.php');
 
+function my_trim_excerpt( $text, $length = 55, $more = ' [&hellip;]'  ) {
+     $text = strip_shortcodes( $text );
+     $text = apply_filters( 'the_content', $text );
+     $text = str_replace(']]>', ']]&gt;', $text);
+
+     $excerpt = wp_trim_words( $text, $length, $more );
+     return $excerpt;
+}
+
 function create_posttype() {
     register_post_type( 'sections',
         array(
