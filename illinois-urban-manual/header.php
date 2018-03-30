@@ -15,13 +15,13 @@
         <div class="px-0 col">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <img src="<? echo get_theme_file_uri( 'assets/images/AISWCDLogo.png' ); ?>" width="250" alt="AISWCD Organization Logo">
+                    <img height="139" width="137" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -50,7 +50,7 @@
                         </li>
                     </ul>
                     <!-- In medium or lower view size we move the search into the main content and out of the navbar. -->
-                    <div class="d-none d-lg-block">
+                    <div class="d-none d-lg-block ml-auto">
                         <form class="form-inline">
                             <input id="header-search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>

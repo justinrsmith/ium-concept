@@ -73,6 +73,10 @@ h1, h2, h3, h4 {
 #newsletter-card {
     background-color: #F5F5F5;
 }
+/* #newsletter-col {
+    bottom: 0;
+    position: absolute;
+} */
 
 /* Section/Appendicies */
 .list-group-item {
