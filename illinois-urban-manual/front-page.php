@@ -1,9 +1,60 @@
 <? get_header() ?>
 
 <div class="container-fluid">
-    <div class="row">
+    <div id="container-row" class="row">
         <? get_sidebar() ?>
         <div class="col">
+            <div class="row">
+                <div class="px-0 col">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <!-- <a class="navbar-brand" href="#">Illinois Urban Manual</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Educational Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <!-- If user gets to small/extra small view quick links side menu goes away so we move into a dropdown in the mobile menu. -->
+                                    <div class="d-md-none d-lg-none">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Quick Links
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <?
+                                                $quick_links = wp_get_nav_menu_items('quick links');
+                                                foreach($quick_links as $menu_item){
+                                                    echo '<a class="dropdown-item" href="'.$menu_item->url.'">'.$menu_item->title.'</a>';
+                                                }
+                                            ?>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- In medium or lower view size we move the search into the main content and out of the navbar. -->
+
+                            <div class="d-none d-lg-block ml-auto col-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="pull-right btn btn-outline-light" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
             <div class="row mt-2">
                 <div class="col-md-6 col-xs-12">
                     <div class="row">
@@ -16,26 +67,14 @@
 
                     <div class="row">
                         <!-- Main content search bar only shows when viewport less than large, easier for mobile/tablets. -->
-                        <div class="col-md-12 d-lg-none my-3">
-                            <div class="row">
-                                <div class="col-md-8 col-8">
-                                    <input aria-label="Search" type="text" class="form-control" placeholder="Search">
-                                </div>
-                                <div class="col-4">
+                        <div class="col-12 d-lg-none my-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
                                     <button class="pull-right btn btn-outline-info" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-sm-12 d-md-none my-3">
-                            <div class="row align-items-center">
-                                <div class="col-8 ml-1">
-                                    <input aria-label="Search" type="text" class="form-control" placeholder="Search">
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="row">
                         <div class="col d-none d-md-block">
@@ -59,7 +98,7 @@
                     <div class="row">
                         <div class="col">
                             <h4>Latest Announcements</h4>
-                            <hr>
+                            <hr class="my-1">
                             <?
                                 $args = array(
                                     'orderby' => 'date',
@@ -104,16 +143,14 @@
                                 <div class="card-body">
                                     <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER</h4>
                                     <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
-                                    <form class="mt-4">
-                                        <div class="form-row align-items-center">
-                                            <div class="col-sm-12 col-lg-9">
-                                                <input class="form-control" type="email" placeholder="Please provide a valid email address" aria-label="Search">
-                                            </div>
-                                            <div class="col-2">
-                                                <button class="btn btn-outline-info my-2" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    <div class="col px-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Valid Email" aria-label="Valid Email" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button class="pull-right btn btn-outline-info" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,6 +163,40 @@
                         <hr>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
+                                <h5>Sections</h5>
+                                <ol class="manual">
+                                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                    <li><a href="#">Non-point Source Pollution Control Processes and Planning Principles</a></li>
+                                    <li><a href="#">Planning Procedures
+                                        <ul>
+                                            <li><a href="#">Introduction</a></li>
+                                            <li><a href="#">Planning Process</a></li>
+                                            <li><a href="#">Criteria for BMP Selection</a></li>
+                                        </ul>
+                                    </a></li>
+                                    <li><a href="#">Facilisis in pretium nisl aliquet</a></li>
+
+                                    <li><a href="#">Nulla volutpat aliquam velit</a></li>
+                                    <li><a href="#">Faucibus porta lacus fringilla vel</a></li>
+                                    <li><a href="#">Aenean sit amet erat nunc</a></li>
+                                    <li><a href="#">Eget porttitor lorem</a></li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <h5>Appendicies</h5>
+                                <ol class="manual">
+                                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                    <li><a href="#">Consectetur adipiscing elit</a></li>
+                                    <li><a href="#">Integer molestie lorem at massa</a></li>
+                                    <li><a href="#">Facilisis in pretium nisl aliquet</a></li>
+                                    <li><a href="#">Nulla volutpat aliquam velit</a></li>
+                                    <li><a href="#">Faucibus porta lacus fringilla vel</a></li>
+                                    <li><a href="#">Aenean sit amet erat nunc</a></li>
+                                    <li><a href="#">Eget porttitor lorem</a></li>
+                                </ol>
+                            </div>
+
+                            <!-- <div class="col-xs-12 col-md-6">
                                 <h5>Sections</h5>
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action">
@@ -184,13 +255,12 @@
                                         <h6>Appendix G: Grant Information Summary for Conservation Projects <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 <?php get_footer(); ?>

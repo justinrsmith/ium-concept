@@ -18,29 +18,41 @@ body {
     margin-bottom: 120px;
 }
 a {
-    color: #3344dd;
+    color: #1F45BA;
 }
 h1, h2, h3, h4 {
     /* green font */
-    color: #00897B;
+    /* color: #00897B; */
 
     /* green font */
     /* color: #009688; */
 
     /* blue font */
     /* color: #039BE5; */
+
+    /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
+    color: #2C5B61;
+}
+h5 {
+    color: #2B3D54;
 }
 
 /* Navigation */
 .navbar {
     /* darker blue */
-    background-color: #01579B;
+    /* background-color: #01579B; */
 
     /* light brown */
     /* background-color: #D7CCC8; */
 
     /* light blue */
     /* background-color: #80D8FF; */
+
+
+    /* layout2 */
+    /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
+    background-color: #60A65F;
+    border-bottom: 1px solid #247065;
 }
 .navbar-brand {
     margin-left: -12px;
@@ -50,12 +62,12 @@ h1, h2, h3, h4 {
 }
 #sidebar {
     /* base */
-    background-color: #E0E0E0;
+    background-color: #E6D4A7;
     /* dark brown */
     /* background-color: #EFEBE9; */
     max-width: 275px;
     /* base border */
-    border-right: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid #A8AD80;
     /* border-right: 1px solid #D7CCC8; */
     /* -240px because 120 top nav/120 footer  */
     min-height: calc(100vh - 240px);
@@ -73,18 +85,21 @@ h1, h2, h3, h4 {
 #newsletter-card {
     background-color: #F5F5F5;
 }
+#newsletter-card h4 {
+    color: #247065;
+}
 /* #newsletter-col {
     bottom: 0;
     position: absolute;
 } */
 
 /* Section/Appendicies */
-.list-group-item {
+/* .list-group-item {
     background-color: #F5F5F5;
 }
 .list-group-item-action:hover {
     background-color: #E0E0E0;
-}
+} */
 
 /* Footer */
 .footer {
@@ -93,7 +108,7 @@ h1, h2, h3, h4 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 120px;
-  background-color: #01579B;
+  background-color: #60A65F;
 }
 
 /* Bootstrap styles, make buttons web accessible */
@@ -121,4 +136,11 @@ h1, h2, h3, h4 {
     background-color: transparent;
     background-image: none;
     border-color: #0c5c68;
+}
+
+.manual {
+    padding-left: 20px;
+}
+#container-row {
+    min-height: calc(100vh - 120px);
 }
