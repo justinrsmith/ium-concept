@@ -98,7 +98,43 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="row">
                         <div class="col">
-                            <h4>Latest Announcements</h4>
+                            <div id="announcements-card" class="card w-100 rounded-0">
+                                <div class="card-body">
+                                    <h4 class="card-title">Latest Announcements</h4>
+                                    <?
+                                        $args = array(
+                                            'orderby' => 'date',
+                                            'order'   => 'DESC',
+                                            'posts_per_page' => '3'
+                                        );
+                                        $query = new WP_Query($args);
+                                        $posts = $query->posts;
+                                        foreach($posts as $post) { ?>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5 class="mb-0"><a href="<? the_permalink(); ?>"><? the_title() ?></a></h5>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <small><strong><? echo get_the_date(); ?></strong></small>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <small><? echo my_trim_excerpt( $post->post_content, 20 ); ?></small>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <a href="#">Continue reading...</a>
+                                                </div>
+                                            </div>
+                                        <? };
+                                    ?>
+                                </div>
+                            </div>
+                            <!-- <h4>Latest Announcements</h4>
                             <hr class="my-1">
                             <?
                                 $args = array(
@@ -135,12 +171,12 @@
                                 <div class="col">
                                     <a href="#">View More Announcements</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg col-md-12 mt-md-2">
-                            <div id="newsletter-card" class="card">
+                        <div class="col-lg col-md-12 mt-3">
+                            <div id="newsletter-card" class="card rounded-0">
                                 <div class="card-body">
                                     <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER</h4>
                                     <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
@@ -158,12 +194,55 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-4 mb-4 row">
+            <div class="mt-3 mb-4 row">
                     <div class="col">
-                        <h4>Illinois Urban Manual Contents</h4>
-                        <hr>
+                        <!-- <h4>Illinois Urban Manual Contents</h4> -->
+                        <!-- <hr> -->
                         <div class="row">
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col">
+                                <div id="manual-card" class="card rounded-0">
+                                  <h4 class="card-header">Illinois Urban Manual Contents</h4>
+                                  <div class="card-body">
+                                      <div class="row">
+                                          <div class="col-xs-12 col-md-6">
+                                              <h5 class="card-title">Sections</h5>
+                                              <ol class="manual">
+                                                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                                  <li><a href="#">Non-point Source Pollution Control Processes and Planning Principles</a></li>
+                                                  <li><a href="#">Planning Procedures
+                                                      <ul>
+                                                          <li><a href="#">Introduction</a></li>
+                                                          <li><a href="#">Planning Process</a></li>
+                                                          <li><a href="#">Criteria for BMP Selection</a></li>
+                                                      </ul>
+                                                  </a></li>
+                                                  <li><a href="#">Facilisis in pretium nisl aliquet</a></li>
+
+                                                  <li><a href="#">Nulla volutpat aliquam velit</a></li>
+                                                  <li><a href="#">Faucibus porta lacus fringilla vel</a></li>
+                                                  <li><a href="#">Aenean sit amet erat nunc</a></li>
+                                                  <li><a href="#">Eget porttitor lorem</a></li>
+                                              </ol>
+                                          </div>
+                                          <div class="col-xs-12 col-md-6">
+                                              <h5 class="card-title">Appendices</h5>
+                                              <ol class="manual">
+                                                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                                  <li><a href="#">Consectetur adipiscing elit</a></li>
+                                                  <li><a href="#">Integer molestie lorem at massa</a></li>
+                                                  <li><a href="#">Facilisis in pretium nisl aliquet</a></li>
+                                                  <li><a href="#">Nulla volutpat aliquam velit</a></li>
+                                                  <li><a href="#">Faucibus porta lacus fringilla vel</a></li>
+                                                  <li><a href="#">Aenean sit amet erat nunc</a></li>
+                                                  <li><a href="#">Eget porttitor lorem</a></li>
+                                              </ol>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-xs-12 col-md-6">
                                 <h5>Sections</h5>
                                 <ol class="manual">
                                     <li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -195,7 +274,7 @@
                                     <li><a href="#">Aenean sit amet erat nunc</a></li>
                                     <li><a href="#">Eget porttitor lorem</a></li>
                                 </ol>
-                            </div>
+                            </div> -->
 
                             <!-- <div class="col-xs-12 col-md-6">
                                 <h5>Sections</h5>

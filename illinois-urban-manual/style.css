@@ -13,7 +13,7 @@ html {
   min-height: 100%;
 }
 body {
-    background-color: #F5F5F5;
+    background-color: #EEEEEE;
     /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
     /* font-family: 'Open Sans', sans-serif; */
@@ -84,9 +84,9 @@ h5 {
     height: 336;
 }
 
-#newsletter-card {
+/* #newsletter-card {
     background-color: #E0E0E0;
-}
+} */
 #newsletter-card h4 {
     color: #247065;
 }
@@ -143,8 +143,18 @@ h5 {
 .manual {
     padding-left: 20px;
 }
+#manual-card {
+    border: 1px solid #A8AD80;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#manual-card .card-header {
+    border-bottom: 1px solid #A8AD80;
+}
 #container-row {
     min-height: calc(100vh - 120px);
+}
+#newsletter-card, #announcements-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Pull carousel row to bottom of col */
