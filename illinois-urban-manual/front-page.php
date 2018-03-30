@@ -6,8 +6,10 @@
         <div class="col">
             <div class="row">
                 <div class="px-0 col">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <!-- <a class="navbar-brand" href="#">Illinois Urban Manual</a> -->
+                    <nav class="py-0 py-md-2 navbar navbar-expand-md navbar-light">
+                        <a class="py-0 d-block d-md-none navbar-brand" href="#">
+                            <img height="80" width="78" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -42,7 +44,7 @@
                             </ul>
                             <!-- In medium or lower view size we move the search into the main content and out of the navbar. -->
 
-                            <div class="d-none d-lg-block ml-auto col-6">
+                            <div class="d-none d-lg-block ml-auto col-5">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
@@ -50,12 +52,11 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </nav>
                 </div>
             </div>
-            <div class="row mt-2">
+            <div class="row mt-2 row row-eq-height">
                 <div class="col-md-6 col-xs-12">
                     <div class="row">
                         <div class="col text-center">
@@ -69,14 +70,14 @@
                         <!-- Main content search bar only shows when viewport less than large, easier for mobile/tablets. -->
                         <div class="col-12 d-lg-none my-3">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <button class="pull-right btn btn-outline-info" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row bottom">
                         <div class="col d-none d-md-block">
                             <div id="carousel-front" class="carousel slide carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner">
