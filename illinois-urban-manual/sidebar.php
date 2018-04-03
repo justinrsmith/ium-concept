@@ -4,7 +4,7 @@
         <div class="col">
             <div class="container">
                 <div class="d-flex flex-column">
-                    <a class="a" href="#">
+                    <a class="text-center" href="#">
                         <img height="139" width="137" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
                     </a>
                 </div>
@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col px-1">
+        <div class="col pr-1">
             <h4 class="mt-2" id="sidebar-header">Quick Links</h4>
             <? /* Primary navigation */
                 wp_nav_menu( array(
