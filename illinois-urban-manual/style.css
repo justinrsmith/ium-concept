@@ -22,25 +22,25 @@ a {
 }
 h1, h2, h3, h4 {
     /* green font */
-    color: #00897B;
+    /* color: #00897B; */
 
     /* green font */
     /* color: #009688; */
 
     /* blue font */
-    /* color: #039BE5; */
+    color: #01579B;
 }
 
 /* Navigation */
 .navbar {
     /* darker blue */
-    background-color: #01579B;
+    /* background-color: #01579B; */
 
     /* light brown */
     /* background-color: #D7CCC8; */
 
     /* light blue */
-    /* background-color: #80D8FF; */
+    background-color: #80D8FF;
 }
 .navbar-brand {
     margin-left: -12px;
@@ -89,7 +89,7 @@ h1, h2, h3, h4 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 120px;
-  background-color: #01579B;
+  background-color: #80D8FF;
 }
 
 /* Bootstrap styles, make buttons web accessible */

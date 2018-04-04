@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="px-0 col">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="<? echo get_theme_file_uri( 'assets/images/AISWCDLogo.png' ); ?>" width="250" alt="AISWCD Organization Logo">
                 </a>
@@ -53,7 +53,7 @@
                     <div class="d-none d-lg-block">
                         <form class="form-inline">
                             <input id="header-search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
                     </div>
 
