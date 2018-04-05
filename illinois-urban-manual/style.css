@@ -16,14 +16,13 @@ body {
     background-color: #EEEEEE;
     /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
-    font-family: 'Lato', sans-serif;
-    /* font-family: 'Roboto Condensed', sans-serif; */
-    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Arimo', sans-serif; */
 
 }
-/* a {
-    color: #1F45BA;
-} */
+a {
+    color: #1d1dff;
+}
 h1, h2, h3, h4 {
     /* green font */
     /* color: #00897B; */
@@ -54,7 +53,6 @@ h1, h2, h3, h4 {
     /* layout2 */
     /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
     background-color: #2B3A15;
-    border-bottom: 1px solid #247065;
 }
 .navbar-brand {
     margin-left: -12px;
@@ -69,7 +67,6 @@ h1, h2, h3, h4 {
     /* background-color: #EFEBE9; */
     max-width: 275px;
     /* base border */
-    border-right: 1px solid #A4A545;
     /* border-right: 1px solid #D7CCC8; */
     /* -240px because 120 top nav/120 footer  */
     min-height: calc(100vh - 240px);
@@ -116,7 +113,7 @@ h1, h2, h3, h4 {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 120px;
-  background-color: #60A65F;
+  background-color: #2B3A15;
 }
 
 /* Bootstrap styles, make buttons web accessible */
@@ -150,17 +147,17 @@ h1, h2, h3, h4 {
     padding-left: 20px;
 }
 #manual-card {
-    border: 1px solid #A4A545;
+    border: 1px solid #788762;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #manual-card .card-header {
-    border-bottom: 1px solid #A4A545;
+    border-bottom: 1px solid #788762;
 }
 #container-row {
     min-height: calc(100vh - 120px);
 }
 #newsletter-card, #announcements-card {
-    border: 1px solid #A4A545;
+    border: 1px solid #788762;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
