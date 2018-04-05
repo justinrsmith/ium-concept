@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
     /* color: #039BE5; */
 
     /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
-    color: #2C5B61;
+    color: #617339;
 }
 h5 {
     color: #2B3D54;
@@ -55,7 +55,7 @@ h5 {
 
     /* layout2 */
     /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
-    background-color: #60A65F;
+    background-color: #2B3A15;
     border-bottom: 1px solid #247065;
 }
 .navbar-brand {
@@ -66,7 +66,7 @@ h5 {
 }
 #sidebar {
     /* base */
-    background-color: #E6D4A7;
+    background-color: #B9AA8B;
     /* dark brown */
     /* background-color: #EFEBE9; */
     max-width: 275px;

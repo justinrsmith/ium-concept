@@ -6,7 +6,7 @@
         <div class="col">
             <div class="row">
                 <div class="px-0 col">
-                    <nav class="py-0 py-md-2 navbar navbar-expand-md navbar-light">
+                    <nav class="py-0 py-md-2 navbar navbar-expand-md navbar-dark">
                         <a class="py-0 d-block d-md-none navbar-brand" href="#">
                             <img height="80" width="78" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
                         </a>
