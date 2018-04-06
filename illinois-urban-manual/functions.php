@@ -1,5 +1,7 @@
 <?
 /* enqueue styles and scripts */
+wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bootstrap.min.css' );
+wp_enqueue_style( 'fontawesome_css', get_template_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css' );
 wp_enqueue_style( 'style', get_stylesheet_uri() );
 wp_enqueue_style( 'carouselfade_css', get_template_directory_uri() . '/carousel-fade.css' );
 
