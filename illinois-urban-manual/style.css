@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
     /* color: #039BE5; */
 
     /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
-    color: #1D648D;
+    color: #007275;
 }
 
 
@@ -52,7 +52,8 @@ h1, h2, h3, h4 {
 
     /* layout2 */
     /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
-    background-color: #2B3A15;
+    /* background-color: #7DBDDC; */
+    background-color: #01558F;
 }
 .navbar-brand {
     margin-left: -12px;
@@ -62,7 +63,7 @@ h1, h2, h3, h4 {
 }
 #sidebar {
     /* base */
-    background-color: #B9AA8B;
+    background-color: #CED1D8;
     /* dark brown */
     /* background-color: #EFEBE9; */
     max-width: 275px;
@@ -147,17 +148,17 @@ h1, h2, h3, h4 {
     padding-left: 20px;
 }
 #manual-card {
-    border: 1px solid #788762;
+    border: 1px solid #CED1D8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #manual-card .card-header {
-    border-bottom: 1px solid #788762;
+    border-bottom: 1px solid #CED1D8;
 }
 #container-row {
     min-height: calc(100vh - 120px);
 }
 #newsletter-card, #announcements-card {
-    border: 1px solid #788762;
+    border: 1px solid #CED1D8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
