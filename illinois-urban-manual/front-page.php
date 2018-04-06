@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg col-md-12 mt-3">
+                        <div class="d-none d-md-block col-lg col-md-12 mt-3">
                             <div id="newsletter-card" class="card rounded-0">
                                 <div class="card-body">
                                     <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="fa fa-newspaper-o" aria-hidden="true"></i></h4>
