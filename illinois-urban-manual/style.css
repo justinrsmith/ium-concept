@@ -7,6 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: illinoisurbanmanual
 Version: 0.1
 */
+
 /* Main template */
 html {
   position: relative;
@@ -14,62 +15,25 @@ html {
 }
 body {
     background-color: #EEEEEE;
-    /* Margin bottom is equal to footer height (below). */
     margin-bottom: 120px;
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Arimo', sans-serif; */
-
 }
 a {
     color: #1d1dff;
 }
 h1, h2, h3, h4 {
-    /* green font */
-    /* color: #00897B; */
-
-    /* green font */
-    /* color: #009688; */
-
-    /* blue font */
-    /* color: #039BE5; */
-
-    /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
     color: #007275;
 }
 
-
 /* Navigation */
 .navbar {
-    /* darker blue */
-    /* background-color: #01579B; */
-
-    /* light brown */
-    /* background-color: #D7CCC8; */
-
-    /* light blue */
-    /* background-color: #80D8FF; */
-
-
-    /* layout2 */
-    /* layout2 https://color.adobe.com/Project-Earth-color-theme-10396566/ */
-    /* background-color: #7DBDDC; */
     background-color: #01558F;
 }
 .navbar-brand {
     margin-left: -12px;
 }
-#header-search {
-    min-width: 315px;
-}
 #sidebar {
-    /* base */
     background-color: #CED1D8;
-    /* dark brown */
-    /* background-color: #EFEBE9; */
     max-width: 275px;
-    /* base border */
-    /* border-right: 1px solid #D7CCC8; */
-    /* -240px because 120 top nav/120 footer  */
     min-height: calc(100vh - 240px);
 }
 #sidebar div ul li a.nav-link{
@@ -83,30 +47,6 @@ h1, h2, h3, h4 {
     color: #081a25;
 }
 
-#carousel-front {
-    width: 450;
-    height: 336;
-}
-
-/* #newsletter-card {
-    background-color: #E0E0E0;
-} */
-/* #newsletter-card h4 {
-    color: #247065;
-} */
-/* #newsletter-col {
-    bottom: 0;
-    position: absolute;
-} */
-
-/* Section/Appendicies */
-/* .list-group-item {
-    background-color: #F5F5F5;
-}
-.list-group-item-action:hover {
-    background-color: #E0E0E0;
-} */
-
 /* Footer */
 .footer {
   position: absolute;
@@ -117,47 +57,10 @@ h1, h2, h3, h4 {
   background-color: #01558F;
 }
 
-/* Bootstrap styles, make buttons web accessible */
-/* Move to a different stylesheet? */
-.btn-primary {
-    color: #fff!important;
-    background-color: #0055b0!important;
-    border-color: #0055b0!important;
-}
-
-.btn-outline-primary {
-    color: #0055b0!important;
-    background-color: transparent;
-    background-image: none;
-    border-color: #0055b0!important;
-}
-
-.btn-info {
-    color: #fff!important;
-    background-color: #0c5c68!important;
-    border-color: #0c5c68!important;
-}
-.btn-outline-info {
-    color: #0c5c68;
-    background-color: transparent;
-    background-image: none;
-    border-color: #0c5c68;
-}
-
-.manual {
-    padding-left: 20px;
-}
-#manual-card {
-    border: 1px solid #CED1D8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#manual-card .card-header {
-    border-bottom: 1px solid #CED1D8;
-}
 #container-row {
     min-height: calc(100vh - 120px);
 }
-#newsletter-card, #announcements-card {
+#announcements-card, #newsletter-card, #manual-card  {
     border: 1px solid #CED1D8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -180,4 +83,29 @@ h1, h2, h3, h4 {
 
 .announement-title-home {
     color: black;
+}
+
+/* Bootstrap styles, make buttons web accessible */
+/* Move to a different stylesheet? */
+.btn-primary {
+    color: #fff!important;
+    background-color: #0055b0!important;
+    border-color: #0055b0!important;
+}
+.btn-outline-primary {
+    color: #0055b0!important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #0055b0!important;
+}
+.btn-info {
+    color: #fff!important;
+    background-color: #0c5c68!important;
+    border-color: #0c5c68!important;
+}
+.btn-outline-info {
+    color: #0c5c68;
+    background-color: transparent;
+    background-image: none;
+    border-color: #0c5c68;
 }
