@@ -109,3 +109,9 @@ h1, h2, h3, h4 {
     background-image: none;
     border-color: #0c5c68;
 }
+.list-group > .list-group-item {
+    background-color: #F8F8FF;
+}
+.list-group > .list-group-item:hover {
+    background-color: white;
+}

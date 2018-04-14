@@ -129,6 +129,66 @@
                         <hr class="mt-0">
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
+                            <h5>Sections</h5>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 1: Introduction <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 2: Non-point Source Pollution Control Processes and Planning Principles <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 3: Planning Procedures <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 4: Practice Standards</h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 5: Construction Specifications <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 6: Material Specification <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 7: Standard Drawings <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 8: Evaluation <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 9: References <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Section 10: Glossary <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Appendices</h5>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix A: National Pollution Discharge Elimination System (NPDES) <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>                        </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix B: Soil Quality – Urban Technical Notes  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix C: Methods for Establishing Receiving Water Quality Impacts of Urban and Suburban Development <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix D: NPDES Phase II Stormwater Permit Program for Small Municipal Separate Storm Sewer Systems (MS4s) <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix E: Sample Natural Resource Protection Ordinances <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix F: USDA Programs – Applicable to Urban or Urbanizing Areas <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h6>Appendix G: Grant Information Summary for Conservation Projects <i class="fa fa-file-pdf-o" aria-hidden="true"></i></h6>
+                                </a>
+                            </div>
+                        </div>
+                            <!-- <div class="col-xs-12 col-md-6">
                                 <h5 class="card-title">Sections</h5>
                                 <ol class="pl-4">
                                     <li><a href="#">Lorem ipsum dolor sit amet</a></li>
@@ -159,7 +219,7 @@
                                     <li><a href="#">Aenean sit amet erat nunc</a></li>
                                     <li><a href="#">Eget porttitor lorem</a></li>
                                 </ol>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
