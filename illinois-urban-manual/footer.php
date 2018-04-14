@@ -1,3 +1,6 @@
+                </div>
+            </div>
+        </div>
         <footer class="footer text-white mt-4">
             <div class="container-fluid py-3">
                 <!-- <div class="row">
