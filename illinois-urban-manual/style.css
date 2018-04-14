@@ -110,8 +110,8 @@ h1, h2, h3, h4 {
     border-color: #0c5c68;
 }
 .list-group > .list-group-item {
-    background-color: #F8F8FF;
+    background-color: #EEEEEE;
 }
-.list-group > .list-group-item:hover {
-    background-color: white;
-}
+/* .list-group > .list-group-item:hover {
+    background-color: #EEEEEE;
+} */
