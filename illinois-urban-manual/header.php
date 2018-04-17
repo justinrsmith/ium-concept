@@ -23,30 +23,26 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Educational Resources</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">About Us</a>
-                                        </li>
+                                        <?
+                                            wp_nav_menu( array(
+                                                'menu' => 'main',
+                                                'menu_class' => 'navbar-nav',
+                                                'walker' => new wp_bootstrap_navwalker())
+                                            );
+                                        ?>
                                         <li class="nav-item dropdown">
                                             <!-- If user gets to small/extra small view quick links side menu goes away so we move into a dropdown in the mobile menu. -->
                                             <div class="d-md-none d-lg-none">
                                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Quick Links
                                                 </a>
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <?
-                                                        $quick_links = wp_get_nav_menu_items('quick links');
-                                                        foreach($quick_links as $menu_item){
-                                                            echo '<a class="dropdown-item" href="'.$menu_item->url.'">'.$menu_item->title.'</a>';
-                                                        }
-                                                    ?>
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                </div>
+                                                <?
+                                                    wp_nav_menu( array(
+                                                        'menu' => 'quick links',
+                                                        'menu_class' => 'pl-4 mb-2 dropdown-menu',
+                                                        'walker' => new wp_bootstrap_navwalker())
+                                                    );
+                                                ?>
                                             </div>
                                         </li>
                                     </ul>
