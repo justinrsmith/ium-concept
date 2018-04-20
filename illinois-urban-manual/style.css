@@ -31,13 +31,16 @@ h1, h2, h3, h4 {
 .navbar-brand {
     margin-left: -12px;
 }
+#menu-quick-links-1 > li  > a {
+    color: #212529;
+}
 #sidebar {
     background-color: #CED1D8;
     max-width: 275px;
     min-height: calc(100vh - 240px);
 }
 #sidebar div ul li a.nav-link{
-    padding-left: 0px;
+    /* padding-left: 0px; */
     padding-right: 0px;
 }
 #menu-quick-links > li > a {
@@ -46,6 +49,11 @@ h1, h2, h3, h4 {
 #sidebar-header {
     color: #081a25;
 }
+#menu-quick-links > li.active > a {
+    background-color: #01558F;
+    color: white!important;
+}
+
 
 /* Footer */
 .footer {

@@ -16,7 +16,7 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col">
-                        <table class="table table-striped">
+                        <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">Standard</th>
