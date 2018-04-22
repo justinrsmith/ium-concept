@@ -41,7 +41,7 @@
             <div class="d-none d-md-block col-lg col-md-12 mt-3">
                 <div id="newsletter-card" class="card rounded-0">
                     <div class="card-body">
-                        <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="fa fa-newspaper-o" aria-hidden="true"></i></h4>
+                        <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="far fa-newspaper" aria-hidden="true"></i></h4>
                         <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
                         <div class="col px-0">
                             <div class="input-group">
@@ -128,64 +128,64 @@
                         <h4 class="card-title">Illinois Urban Manual Contents</h4>
                         <hr class="mt-0">
                         <div class="row">
-                            <div class="col-xs-12 col-md-6 mb-3">
+                            <div class="col-12 col-md-6 mb-3">
                                 <h5>Sections</h5>
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        1: Introduction <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        1: Introduction <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        2: Non-point Source Pollution Control Processes and Planning Principles <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        2: Non-point Source Pollution Control Processes and Planning Principles <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        3: Planning Procedures <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        3: Planning Procedures <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
                                         4: Practice Standards
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        5: Construction Specifications <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        5: Construction Specifications <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        6: Material Specification <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        6: Material Specification <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        7: Standard Drawings <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        7: Standard Drawings <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        8: Evaluation <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        8: Evaluation <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        9: References <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        9: References <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        10: Glossary <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        10: Glossary <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div class="col-12 col-md-6">
                                 <h5>Appendices</h5>
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        A: National Pollution Discharge Elimination System (NPDES) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        A: National Pollution Discharge Elimination System (NPDES) <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        B: Soil Quality – Urban Technical Notes  <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        B: Soil Quality – Urban Technical Notes  <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        C: Methods for Establishing Receiving Water Quality Impacts of Urban and Suburban Development <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        C: Methods for Establishing Receiving Water Quality Impacts of Urban and Suburban Development <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        D: NPDES Phase II Stormwater Permit Program for Small Municipal Separate Storm Sewer Systems (MS4s) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        D: NPDES Phase II Stormwater Permit Program for Small Municipal Separate Storm Sewer Systems (MS4s) <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        E: Sample Natural Resource Protection Ordinances <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        E: Sample Natural Resource Protection Ordinances <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        F: USDA Programs – Applicable to Urban or Urbanizing Areas <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        F: USDA Programs – Applicable to Urban or Urbanizing Areas <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        G: Grant Information Summary for Conservation Projects <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        G: Grant Information Summary for Conservation Projects <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
                                 </div>
                             </div>

@@ -120,6 +120,32 @@ h1, h2, h3, h4 {
 .list-group > .list-group-item {
     background-color: #EEEEEE;
 }
-/* .list-group > .list-group-item:hover {
+
+/* Educational Resources */
+
+#education-nav-tabs > li > .nav-link.active {
+    font-weight: bold;
+    color: #007275;
+}
+#education-nav-tabs > li > a {
+    color: #0178cc;
+}
+.materials-container {
     background-color: #EEEEEE;
+}
+/* #education-container > div > .nav-tabs {
+    border-color: #CED1D8;
+}
+
+#education-container > div > .nav-tabs > li > a {
+    background-color: #EEEEEE;
+    border-bottom-color: #CED1D8;
+}
+
+#education-container > div > .nav-tabs > li > a.active {
+    background-color: #EEEEEE;
+    border-left-color: #CED1D8;
+    border-top-color: #CED1D8;
+    border-right-color: #CED1D8;
+    border-bottom-color: #EEEEEE;
 } */

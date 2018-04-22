@@ -1,7 +1,7 @@
 <?
 /* enqueue styles and scripts */
 wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
-wp_enqueue_style( 'fontawesome_css', get_template_directory_uri() . '/assets/css/font-awesome-4.7.0/css/font-awesome.min.css' );
+wp_enqueue_style( 'fontawesome_css', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css' );
 wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 wp_enqueue_script( 'jquery_js', get_template_directory_uri() . '/assets/js/jquery-3.3.1.slim.min.js');
