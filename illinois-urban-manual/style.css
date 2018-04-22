@@ -37,9 +37,18 @@ h1, h2, h3, h4 {
 }
 #search-results .list-group-item {
     border-color: #0d99fe;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-#search-results .list-group-item:hover {
+#search-results p:hover {
     background-color: #EEEEEE;
+}
+#search-results h6 {
+    color: #007275;
+}
+#search-results a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
 }
 #menu-quick-links-1 > li  > a {
     color: #212529;

@@ -64,7 +64,7 @@
                                             </ul>
                                         </div>
                                     </div> -->
-                                    <div id="ium-search-container" class="d-none d-lg-block ml-auto col-5 pr-0">
+                                    <div id="ium-search-container" class="d-none d-lg-block ml-auto col-4 pr-0">
                                         <ium-search></ium-search>
                                     </div>
                                 </div>
@@ -73,18 +73,20 @@
                         <script type="text/html" id="ium-search-template">
                             <div>
                                 <div class="input-group">
-                                    <input v-model="searchQuery" type="text" class="ml-5 form-control" placeholder="Search" aria-label="Search term" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <button class="pull-right btn btn-outline-light" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
-                                    </div>
+                                    <input v-model="searchQuery" type="text" class="ml-5 form-control" placeholder="Search..." aria-label="Search term" aria-describedby="basic-addon2">
                                 </div>
                                 <div v-click-outside="hide" v-if="visible" id="search-results" class="col pl-0 mt-1">
                                     <ul class="list-group rounded">
-                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <li class="list-group-item">
+                                            <h6 class="ml-3">Some area</h6>
+                                            <p class="mb-0"><a class="mx-3" href="#">Dapibus ac facilisis in</a></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6 class="ml-3">Another area</h6>
+                                            <p class="mb-0"><a class="mx-3" href="#">Dapibus ac facilisis in</a></p>
+                                            <p class="mb-0"><a class="mx-3" href="#">Dapibus ac facilisis in</a></p>
+                                            <p class="mb-0"><a class="mx-3" href="#">Dapibus ac facilisis in</a></p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

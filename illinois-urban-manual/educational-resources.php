@@ -27,7 +27,7 @@
                         <div class="row">
                             <div class="col m-3">
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-6 mb-2">
                                         <div class="materials-container p-3 rounded">
                                             <h5>Important Documents</h5>
                                             <hr class="mt-0">
@@ -75,7 +75,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-6 mb-2">
                                         <div class="materials-container p-3 rounded">
                                             <h5>Presentations</h5>
                                             <hr class="mt-0">
