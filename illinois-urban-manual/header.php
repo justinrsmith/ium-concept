@@ -78,7 +78,7 @@
                                         <button class="pull-right btn btn-outline-light" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                     </div>
                                 </div>
-                                <div v-if="show" id="search-results" class="col pl-0 mt-1">
+                                <div v-click-outside="hide" v-if="visible" id="search-results" class="col pl-0 mt-1">
                                     <ul class="list-group rounded">
                                         <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
                                         <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
@@ -95,18 +95,45 @@
                                 data: function() {
                                     return {
                                         searchQuery: null,
-                                        show: false
+                                        visible: false
+                                    }
+                                },
+                                methods: {
+                                    show: function() {
+                                        this.visible = true;
+                                    },
+                                    hide: function() {
+                                        this.visible = false;
                                     }
                                 },
                                 watch: {
                                     searchQuery: function() {
                                         if(this.searchQuery.length > 1)
-                                            this.show = true
+                                            this.show()
                                         else
-                                            this.show = false
+                                            this.hide()
                                     }
                                 }
                             });
                             new Vue({ el: '#ium-search-container' })
+
+                            // https://jsfiddle.net/70vm3jrd/1/
+                            // This will hide search results dropdown if user
+                            // clicks outside of the component
+                            Vue.directive('click-outside', {
+                                bind: function (el, binding, vnode) {
+                                    el.event = function (event) {
+                                        // here I check that click was outside the el and his childrens
+                                        if (!(el == event.target || el.contains(event.target))) {
+                                        // and if it did, call method provided in attribute value
+                                            vnode.context[binding.expression](event);
+                                        }
+                                    };
+                                    document.body.addEventListener('click', el.event)
+                                },
+                                unbind: function (el) {
+                                    document.body.removeEventListener('click', el.event)
+                                },
+                            });
                         </script>
                     </div>
