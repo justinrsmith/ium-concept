@@ -47,15 +47,66 @@
                                         </li>
                                     </ul>
                                     <!-- In medium or lower view size we move the search into the main content and out of the navbar. -->
-                                    <div class="d-none d-lg-block ml-auto col-5 pr-0">
+                                    <!-- <div class="d-none d-lg-block ml-auto col-5 pr-0">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search" aria-label="Search term" aria-describedby="basic-addon2">
+                                            <input type="text" class="ml-5 form-control" placeholder="Search" aria-label="Search term" aria-describedby="basic-addon2">
                                             <div class="input-group-append">
                                                 <button class="pull-right btn btn-outline-light" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
+                                        <div id="search-results" class="col pl-0 mt-1">
+                                            <ul class="list-group rounded">
+                                              <li class="list-group-item">Cras justo odio</li>
+                                              <li class="list-group-item">Dapibus ac facilisis in</li>
+                                              <li class="list-group-item">Morbi leo risus</li>
+                                              <li class="list-group-item">Porta ac consectetur ac</li>
+                                              <li class="list-group-item">Vestibulum at eros</li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                    <div id="ium-search-container" class="d-none d-lg-block ml-auto col-5 pr-0">
+                                        <ium-search></ium-search>
                                     </div>
                                 </div>
                             </nav>
                         </div>
+                        <script type="text/html" id="ium-search-template">
+                            <div>
+                                <div class="input-group">
+                                    <input v-model="searchQuery" type="text" class="ml-5 form-control" placeholder="Search" aria-label="Search term" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="pull-right btn btn-outline-light" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <div v-if="show" id="search-results" class="col pl-0 mt-1">
+                                    <ul class="list-group rounded">
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </script>
+                        <script type="text/javascript">
+                            Vue.component('ium-search', {
+                                template: '#ium-search-template',
+                                data: function() {
+                                    return {
+                                        searchQuery: null,
+                                        show: false
+                                    }
+                                },
+                                watch: {
+                                    searchQuery: function() {
+                                        if(this.searchQuery.length > 1)
+                                            this.show = true
+                                        else
+                                            this.show = false
+                                    }
+                                }
+                            });
+                            new Vue({ el: '#ium-search-container' })
+                        </script>
                     </div>

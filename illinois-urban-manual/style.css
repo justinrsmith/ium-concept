@@ -31,6 +31,16 @@ h1, h2, h3, h4 {
 .navbar-brand {
     margin-left: -12px;
 }
+#search-results {
+    position: absolute;
+    z-index: 999;
+}
+#search-results .list-group-item {
+    border-color: #0d99fe;
+}
+#search-results .list-group-item:hover {
+    background-color: #EEEEEE;
+}
 #menu-quick-links-1 > li  > a {
     color: #212529;
 }
@@ -117,7 +127,7 @@ h1, h2, h3, h4 {
     background-image: none;
     border-color: #0c5c68;
 }
-.list-group > .list-group-item {
+#manual-card .list-group > .list-group-item {
     background-color: #EEEEEE;
 }
 
@@ -129,6 +139,9 @@ h1, h2, h3, h4 {
 }
 #education-nav-tabs > li > a {
     color: #0178cc;
+}
+#education-tab-content h5 {
+    color: #007275;
 }
 .materials-container {
     background-color: #EEEEEE;

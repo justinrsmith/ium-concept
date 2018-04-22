@@ -1,7 +1,7 @@
 <? // Template Name: Educational Resources ?>
 
 <? get_header() ?>
-<div class="row mt-2">
+<div class="row mt-2 mb-4">
     <div class="col">
         <div class="card w-100 h-100 rounded-0">
             <div class="card-body">
@@ -22,7 +22,7 @@
                         <a class="nav-link" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="true">FAQ <i class="far fa-question-circle"></i></a>
                     </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content" id="education-tab-content">
                     <div class="tab-pane fade show active" id="materials" role="tabpanel" aria-labelledby="materials-tab">
                         <div class="row">
                             <div class="col m-3">
@@ -135,9 +135,19 @@
                     <div class="tab-pane fade" id="webcasts" role="tabpanel" aria-labelledby="webcasts-tab">
                         <div class="row">
                             <div class="col m-3">
-                                <h4>Webcasts</h4>
                                 <div class="row">
-
+                                    <div class="col-xs-12 col-md-6 text-center mt-2">
+                                        <h5 class="text-left">Webcast Title Here</h5>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 text-center mt-2">
+                                        <h5 class="text-left">Webcast Title Here</h5>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o9-l8_t4AS8" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

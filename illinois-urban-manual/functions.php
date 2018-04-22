@@ -7,6 +7,7 @@ wp_enqueue_style( 'style', get_stylesheet_uri() );
 wp_enqueue_script( 'jquery_js', get_template_directory_uri() . '/assets/js/jquery-3.3.1.slim.min.js');
 wp_enqueue_script( 'popper_js', get_template_directory_uri() . '/assets/js/popper.min.js');
 wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js' );
+wp_enqueue_script( 'vue_js', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js' );
 
 // Help with using bootstrap for menus
 // https://github.com/wp-bootstrap/wp-bootstrap-navwalker
