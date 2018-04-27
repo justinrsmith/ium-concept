@@ -4,8 +4,8 @@
 <div class="row mt-2 mb-4">
     <div class="col">
         <div class="card w-100 h-100 rounded-0">
-            <div class="card-body">
-                <ul id="education-nav-tabs" class="nav nav-tabs" id="myTab" role="tablist">
+            <div class="card-header">
+                <ul id="education-nav-tabs" class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="materials-tab" data-toggle="tab" href="#materials" role="tab" aria-controls="materials" aria-selected="false">Materials <i class="fas fa-book"></i></a>
                     </li>
@@ -22,10 +22,12 @@
                         <a class="nav-link" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="true">FAQ <i class="far fa-question-circle"></i></a>
                     </li>
                 </ul>
+            </div>
+            <div class="card-body">
                 <div class="tab-content" id="education-tab-content">
                     <div class="tab-pane fade show active" id="materials" role="tabpanel" aria-labelledby="materials-tab">
                         <div class="row">
-                            <div class="col m-3">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-12 col-md-6 mb-2">
                                         <div class="materials-container p-3 rounded">
@@ -115,7 +117,7 @@
                     </div>
                     <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
                         <div class="row">
-                            <div class="col m-3">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6 text-center mt-2">
                                         <h5 class="text-left">Video Title Here</h5>
@@ -123,18 +125,25 @@
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-xs-12 col-md-6 text-center mt-2">
+                                    <div class="col-xs-12 col-md-6 text-center mt-2">
+                                        <h5 class="text-left">Video Title Here</h5>
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o9-l8_t4AS8" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                                         </div>
-                                    </div> -->
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 text-center mt-2">
+                                        <h5 class="text-left">Video Title Here</h5>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="webcasts" role="tabpanel" aria-labelledby="webcasts-tab">
                         <div class="row">
-                            <div class="col m-3">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6 text-center mt-2">
                                         <h5 class="text-left">Webcast Title Here</h5>
@@ -154,7 +163,7 @@
                     </div>
                     <div class="tab-pane fade" id="helpful-links" role="tabpanel" aria-labelledby="helpful-links-tab">
                         <div class="row">
-                            <div class="col m-3">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="materials-container p-3 rounded">
@@ -182,7 +191,7 @@
                     </div>
                     <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
                         <div class="row">
-                            <div class="col m-3">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="materials-container p-3 rounded">
