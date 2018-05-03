@@ -6,12 +6,12 @@
     <div class="mt-2 col">
         <div class="row">
             <div class="col-lg-9 col-md-12">
+                <div class="d-lg-none my-3" id="ium-search-container-file-list">
+                    <ium-search></ium-search>
+                </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-5">
                         <h4><? the_title() ?></h4>
-                    </div>
-                    <div class="offset-md-2 col-sm-12 col-md-5">
-                        <input class="form-control" type="text" name="" value="" placeholder="Search here for a standard">
                     </div>
                 </div>
                 <div class="row mt-2">

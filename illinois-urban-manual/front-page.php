@@ -1,5 +1,6 @@
 <? get_header() ?>
 <div class="row mt-2 row-eq-height">
+
     <div class="col-md-6 col-xs-12">
         <div class="row">
             <div class="col text-center">
@@ -12,11 +13,14 @@
         <div class="row">
             <!-- Main content search bar only shows when viewport less than large, easier for mobile/tablets. -->
             <div class="col-12 d-lg-none my-3">
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" aria-label="search term" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <button class="pull-right btn btn-outline-info" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
+                </div> -->
+                <div id="ium-search-container-mobile">
+                    <ium-search></ium-search>
                 </div>
             </div>
         </div>
@@ -95,6 +99,11 @@
                                 </div>
                             <? };
                         ?>
+                        <div class="row">
+                            <div class="col text-right">
+                                <a href="#">View All News <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
