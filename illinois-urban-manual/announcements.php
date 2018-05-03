@@ -2,7 +2,7 @@
 
 <? get_header() ?>
 <div class="row mt-2 mb-4">
-    <div class="col-xs-12 col-md-9 offset-md-1">
+    <div class="col-xs-12 col-md-10 offset-md-1">
         <div class="card w-100 h-100 rounded-0">
             <div class="card-body">
                 <?
@@ -16,8 +16,7 @@
                     foreach($posts as $post) { ?>
                         <div class="row">
                             <div class="col">
-                                <h4 class="mb-0"><a class="announement-title-home" href="<? the_permalink(); ?>"><? the_title() ?></a></h4>
-                                <!-- <h4 class="mb-0"><a class="announement-title-home" href="#"><? the_title() ?></a></h4> -->
+                                <h4 class="mb-0"><a href="<? the_permalink(); ?>"><? the_title() ?></a></h4>
                             </div>
                         </div>
                         <div class="row">
@@ -30,6 +29,7 @@
                                 <p><? echo $post->post_content; ?></p>
                             </div>
                         </div>
+                        <hr>
                     <? };
                 ?>
             </div>

@@ -101,7 +101,7 @@
                         ?>
                         <div class="row">
                             <div class="col text-right">
-                                <a href="#">View All News <i class="fas fa-arrow-right"></i></a>
+                                <a href="<? echo get_permalink( get_page_by_title( 'announcements' ) ); ?>">View All News <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
