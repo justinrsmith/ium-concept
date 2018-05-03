@@ -79,7 +79,6 @@
                                 <div class="row">
                                     <div class="col">
                                         <h4 class="mb-0"><a class="announement-title-home" href="<? the_permalink(); ?>"><? the_title() ?></a></h4>
-                                        <!-- <h4 class="mb-0"><a class="announement-title-home" href="#"><? the_title() ?></a></h4> -->
                                     </div>
                                 </div>
                                 <div class="row">
@@ -94,7 +93,7 @@
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col">
-                                        <a href="#">Continue reading</a>
+                                        <a href="<? the_permalink(); ?>">Continue reading</a>
                                     </div>
                                 </div>
                             <? };
