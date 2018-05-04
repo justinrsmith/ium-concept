@@ -116,14 +116,19 @@ h1, h2, h3, h4 {
 /* Move to a different stylesheet? */
 .btn-primary {
     color: #fff!important;
-    background-color: #0055b0!important;
-    border-color: #0055b0!important;
+    background-color: #01558F!important;
+    border-color: #01558F!important;
 }
 .btn-outline-primary {
-    color: #0055b0!important;
+    color: #01558F!important;
     background-color: transparent;
     background-image: none;
-    border-color: #0055b0!important;
+    border-color: #01558F!important;
+}
+.btn-outline-primary:hover {
+    color: #fff!important;
+    background-color: #01558F!important;
+    border-color: #01558F!important;
 }
 .btn-info {
     color: #fff!important;

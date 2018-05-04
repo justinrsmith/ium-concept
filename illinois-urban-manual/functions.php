@@ -13,6 +13,13 @@ wp_enqueue_script( 'vue_js', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js' );
 // https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 require_once('wp-bootstrap-navwalker.php');
 
+// http://wpsnipp.com/index.php/functions-php/adding-classes-to-previous_posts_link/
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+function posts_link_attributes(){
+    return 'class="btn btn-outline-primary"';
+}
+
 function my_trim_excerpt( $text, $length = 55, $more = ' [&hellip;]'  ) {
      $text = strip_shortcodes( $text );
      $text = apply_filters( 'the_content', $text );
