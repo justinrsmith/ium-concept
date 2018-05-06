@@ -3,8 +3,8 @@
 <? get_header() ?>
 <div class="row mt-2 mb-4">
     <div class="col">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav class="ium-breadcrumbs" aria-label="breadcrumb">
+            <ol class="breadcrumb px-0">
                 <li class="breadcrumb-item"><a href="<? echo get_home_url(); ?>">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Educational Resources</li>
             </ol>

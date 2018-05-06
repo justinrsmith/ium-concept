@@ -16,7 +16,7 @@
                         <div class="px-0 col">
                             <nav class="py-0 py-md-2 navbar navbar-expand-md navbar-dark">
                                 <a class="py-0 d-block d-md-none navbar-brand" href="<? get_home_url(); ?>">
-                                    <img height="80" width="78" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
+                                    <img height="80" width="78" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="Illinois Urban Manual Logo">
                                 </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>

@@ -2,8 +2,8 @@
 <? if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="row mt-2 mb-4">
         <div class="col-xs-12 col-md-10 offset-md-1">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+            <nav class="ium-breadcrumbs" aria-label="breadcrumb">
+                <ol class="breadcrumb px-0">
                     <li class="breadcrumb-item"><a href="<? echo get_home_url(); ?>">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page"><a href="<? echo get_permalink( get_page_by_title( 'announcements' ) ); ?>">Announcements</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><? the_title() ?></li>

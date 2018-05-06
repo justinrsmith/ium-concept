@@ -72,6 +72,9 @@ h1, h2, h3, h4 {
     background-color: #01558F;
     color: white!important;
 }
+.ium-breadcrumbs > ol {
+    background-color: #EEEEEE;
+}
 
 
 /* Footer */

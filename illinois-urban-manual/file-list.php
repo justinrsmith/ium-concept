@@ -4,8 +4,8 @@
 
 <div class="row mt-2">
     <div class="mt-2 col">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav class="ium-breadcrumbs" aria-label="breadcrumb">
+            <ol class="breadcrumb px-0">
                 <li class="breadcrumb-item"><a href="<? echo get_home_url(); ?>">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page"><?php echo get_the_title(); ?></li>
             </ol>
