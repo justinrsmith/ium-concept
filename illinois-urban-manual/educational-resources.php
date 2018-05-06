@@ -3,6 +3,12 @@
 <? get_header() ?>
 <div class="row mt-2 mb-4">
     <div class="col">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="<? echo get_home_url(); ?>">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Educational Resources</li>
+            </ol>
+        </nav>
         <div class="card w-100 h-100 rounded-0">
             <div class="card-header">
                 <ul id="education-nav-tabs" class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">

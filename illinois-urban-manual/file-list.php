@@ -4,6 +4,12 @@
 
 <div class="row mt-2">
     <div class="mt-2 col">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="<? echo get_home_url(); ?>">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo get_the_title(); ?></li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-lg-9 col-md-12">
                 <div class="d-lg-none my-3" id="ium-search-container-file-list">

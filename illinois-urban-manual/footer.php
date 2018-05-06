@@ -22,7 +22,7 @@
                 <div class="input-group">
                     <input v-model="searchQuery" type="text" class="form-control" placeholder="Search..." aria-label="Search term" aria-describedby="basic-addon2">
                 </div>
-                <div v-click-outside="hide" v-if="visible" id="search-results" class="col pl-0 mt-1">
+                <div v-click-outside="hide" v-if="visible" id="search-results" class="col pl-0 pr-0 pr-md-3 mt-1">
                     <ul class="list-group rounded">
                         <li class="list-group-item">
                             <h6 class="ml-3">Some area</h6>

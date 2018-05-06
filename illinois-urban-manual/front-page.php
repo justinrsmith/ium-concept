@@ -19,7 +19,7 @@
                         <button class="pull-right btn btn-outline-info" type="submit">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </div> -->
-                <div id="ium-search-container-mobile">
+                <div id="ium-search-container-mobile" class="ml-auto col px-0">
                     <ium-search></ium-search>
                 </div>
             </div>
@@ -71,14 +71,14 @@
                             $args = array(
                                 'orderby' => 'date',
                                 'order'   => 'DESC',
-                                'posts_per_page' => '4'
+                                'posts_per_page' => '3'
                             );
                             $query = new WP_Query($args);
                             $posts = $query->posts;
                             foreach($posts as $post) { ?>
                                 <div class="row">
                                     <div class="col">
-                                        <h4 class="mb-0"><a class="announement-title-home" href="<? the_permalink(); ?>"><? the_title() ?></a></h4>
+                                        <h4 class="mb-0 announcement-title-home"><? the_title() ?></h4>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -86,12 +86,12 @@
                                         <p class="text-muted mb-0"><? echo get_the_date(); ?></p>
                                     </div>
                                 </div>
-                                <div class="row mb-auto">
+                                <div class="row mb-0">
                                     <div class="col">
-                                        <p><? echo my_trim_excerpt( $post->post_content, 20 ); ?></p>
+                                        <p class="mb-0"><? echo my_trim_excerpt( $post->post_content, 50 ); ?></p>
                                     </div>
                                 </div>
-                                <div class="row mb-2">
+                                <div class="row mt-1 mb-2">
                                     <div class="col">
                                         <a href="<? the_permalink(); ?>">Continue reading</a>
                                     </div>
@@ -102,24 +102,6 @@
                             <div class="col text-right">
                                 <a href="<? echo get_permalink( get_page_by_title( 'announcements' ) ); ?>">View All News <i class="fas fa-arrow-right"></i></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="d-block d-md-none d-lg-none d-xl-none col-lg col-md-12 mt-3">
-        <div id="newsletter-card" class="card rounded-0">
-            <div class="card-body">
-                <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="fa fa-newspaper-o" aria-hidden="true"></i></h4>
-                <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
-                <div class="col px-0">
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-label="Valid Email" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="pull-right btn btn-outline-info" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></button>
                         </div>
                     </div>
                 </div>
@@ -197,6 +179,24 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="d-block d-md-none d-lg-none d-xl-none col-lg col-md-12 mb-3">
+        <div id="newsletter-card" class="card rounded-0">
+            <div class="card-body">
+                <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="fa fa-newspaper-o" aria-hidden="true"></i></h4>
+                <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
+                <div class="col px-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Valid Email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="pull-right btn btn-outline-info" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></button>
                         </div>
                     </div>
                 </div>
