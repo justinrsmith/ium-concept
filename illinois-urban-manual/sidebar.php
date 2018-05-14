@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="d-flex flex-column">
                     <a class="text-center" href="/">
-                        <img height="139" width="137" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="">
+                        <img height="139" width="137" src="<? echo get_theme_file_uri( 'assets/images/ium_logo.png' ); ?>" alt="Illinois Urban Manual Logo">
                     </a>
                 </div>
             </div>

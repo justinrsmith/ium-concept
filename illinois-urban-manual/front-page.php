@@ -43,13 +43,13 @@
         </div>
         <div class="row">
             <div class="d-none d-md-block col-lg col-md-12 mt-3">
-                <div id="newsletter-card" class="card rounded-0">
+                <div class="newsletter-card card rounded-0">
                     <div class="card-body">
                         <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="far fa-newspaper" aria-hidden="true"></i></h4>
                         <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
                         <div class="col px-0">
                             <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Valid Email" aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" aria-label="Valid Email">
                                 <div class="input-group-append">
                                     <button class="pull-right btn btn-outline-info" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></button>
                                 </div>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="row mt-1 mb-2">
                                     <div class="col">
-                                        <a href="<? the_permalink(); ?>">Continue reading</a>
+                                        <a href="<? the_permalink(); ?>">Continue Reading Announcement</a>
                                     </div>
                                 </div>
                             <? };
@@ -134,13 +134,13 @@
                                         4: Practice Standards
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        5: Construction Specifications <i class="far fa-file-pdf" aria-hidden="true"></i>
+                                        5: Construction Specifications
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        6: Material Specification <i class="far fa-file-pdf" aria-hidden="true"></i>
+                                        6: Material Specification
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-                                        7: Standard Drawings <i class="far fa-file-pdf" aria-hidden="true"></i>
+                                        7: Standard Drawings
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
                                         8: Evaluation <i class="far fa-file-pdf" aria-hidden="true"></i>
@@ -188,13 +188,13 @@
 </div>
 <div class="row">
     <div class="d-block d-md-none d-lg-none d-xl-none col-lg col-md-12 mb-3">
-        <div id="newsletter-card" class="card rounded-0">
+        <div class="newsletter-card card rounded-0">
             <div class="card-body">
                 <h4 class="card-title">SIGN UP FOR OUR NEWSLETTER <i class="fa fa-newspaper-o" aria-hidden="true"></i></h4>
                 <h6 class="card-subtitle mb-2">If you would like to receive our newsletter regarding the Illinois Urban Manual please sign up below.</h6>
                 <div class="col px-0">
                     <div class="input-group">
-                        <input type="text" class="form-control" aria-label="Valid Email" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" aria-label="Valid Email">
                         <div class="input-group-append">
                             <button class="pull-right btn btn-outline-info" type="submit">Sign Up <i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></button>
                         </div>

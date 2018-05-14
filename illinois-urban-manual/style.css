@@ -75,6 +75,12 @@ h1, h2, h3, h4 {
 .ium-breadcrumbs > ol {
     background-color: #EEEEEE;
 }
+.ium-breadcrumbs li.active {
+    color: #42484c;
+}
+#file-table-header-divider {
+    border-top-color: #01558F;
+}
 
 
 /* Footer */
@@ -90,7 +96,7 @@ h1, h2, h3, h4 {
 #container-row {
     min-height: calc(100vh - 120px);
 }
-#announcements-card, #newsletter-card, #manual-card  {
+#announcements-card, .newsletter-card, #manual-card  {
     border: 1px solid #CED1D8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
