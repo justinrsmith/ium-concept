@@ -16,7 +16,7 @@
                     <ium-search></ium-search>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-5">
+                    <div class="col-sm-12 col-md-8">
                         <h4><? the_title() ?></h4>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <?
                             // If mobile and not Standard Drawings or Construction specs we want to make the
                             // columsn bigger.
-                            $name_col_val = 'col-8 col-md-6';
+                            $name_col_val = 'col-9 col-md-6';
                             $code_col_val = 'col-2 col-md-2';
                             $pages_with_additional_doc = array('Standard Drawings', 'Construction Specifications');
                             if (in_array(get_the_title(), $pages_with_additional_doc)) {
@@ -60,7 +60,7 @@
                                 </div>
                             <? } ?>
                             <div class="d-none d-md-block col-2">
-                                <strong>Upload Date</strong>
+                                <strong><i class="far fa-calendar-alt"></i> Date</strong>
                             </div>
                         </div>
                         <hr id="file-table-header-divider" class="mt-1">
