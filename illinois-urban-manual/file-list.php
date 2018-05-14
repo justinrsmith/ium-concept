@@ -112,7 +112,7 @@
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="card bg-light mb-3">
-                    <div class="card-header">Additional Information</div>
+                    <div id="additional-information-header" class="card-header"><strong>Additional Information</strong></div>
                     <div class="card-body">
                         <a href="#"><i class="far fa-file-pdf" aria-hidden="true"></i> Introduction</a><br>
                         <a href="#"><i class="far fa-file-pdf" aria-hidden="true"></i> Urban Standards List</a>

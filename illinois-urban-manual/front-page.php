@@ -1,6 +1,5 @@
 <? get_header() ?>
-<div class="row mt-2 row-eq-height">
-
+<div class="row mt-2">
     <div class="col-md-6 col-xs-12">
         <div class="row">
             <div class="col text-center">
@@ -130,16 +129,16 @@
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
                                         3: Planning Procedures <i class="far fa-file-pdf" aria-hidden="true"></i>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                                    <a href="<? echo get_permalink( get_page_by_title( 'practice standards' ) ); ?>" class="list-group-item list-group-item-action list-group-item-secondary">
                                         4: Practice Standards
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                                    <a href="<? echo get_permalink( get_page_by_title( 'construction specifications' ) ); ?>" class="list-group-item list-group-item-action list-group-item-secondary">
                                         5: Construction Specifications
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                                    <a href="<? echo get_permalink( get_page_by_title( 'material specification' ) ); ?>" class="list-group-item list-group-item-action list-group-item-secondary">
                                         6: Material Specification
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                                    <a href="<? echo get_permalink( get_page_by_title( 'standard drawings' ) ); ?>" class="list-group-item list-group-item-action list-group-item-secondary">
                                         7: Standard Drawings
                                     </a>
                                     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">

@@ -8,6 +8,7 @@ Text Domain: illinoisurbanmanual
 Version: 0.1
 */
 
+
 /* Main template */
 html {
   position: relative;
@@ -23,6 +24,7 @@ a {
 h1, h2, h3, h4 {
     color: #007275;
 }
+
 
 /* Navigation */
 .navbar {
@@ -78,8 +80,21 @@ h1, h2, h3, h4 {
 .ium-breadcrumbs li.active {
     color: #42484c;
 }
-#file-table-header-divider {
-    border-top-color: #01558F;
+
+
+/* Front Page */
+#announcements-card, .newsletter-card, #manual-card  {
+    border: 1px solid #CED1D8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.announcement-title-home {
+    color: black;
+}
+#manual-card .list-group > .list-group-item {
+    background-color: #EEEEEE;
+}
+#manual-card .list-group > .list-group-item:hover {
+    background-color: #d6d8db;
 }
 
 
@@ -92,34 +107,35 @@ h1, h2, h3, h4 {
   height: 120px;
   background-color: #01558F;
 }
-
 #container-row {
     min-height: calc(100vh - 120px);
 }
-#announcements-card, .newsletter-card, #manual-card  {
-    border: 1px solid #CED1D8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+/* File List */
+#file-table-header-divider {
+    border-top-color: #01558F;
+}
+#additional-information-header {
+    color: #12296c!important;
 }
 
-/* Pull carousel row to bottom of col */
-/* https://stackoverflow.com/a/26555402/2126218 */
-.bottom {
-    position: absolute;
-    bottom: 0;
-    margin-right: 0;
-    /* stops carousel image from resizing */
-    min-width: 100%;
+
+/* Educational Resources */
+#education-nav-tabs > li > .nav-link.active {
+    font-weight: bold;
+    color: #007275;
 }
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+#education-nav-tabs > li > a {
+    color: #0178cc;
+}
+#education-tab-content h5 {
+    color: #007275;
+}
+.materials-container {
+    background-color: #EEEEEE;
 }
 
-.announcement-title-home {
-    color: black;
-}
 
 /* Bootstrap styles, make buttons web accessible */
 /* Move to a different stylesheet? */
@@ -150,38 +166,3 @@ h1, h2, h3, h4 {
     background-image: none;
     border-color: #0c5c68;
 }
-#manual-card .list-group > .list-group-item {
-    background-color: #EEEEEE;
-}
-
-/* Educational Resources */
-
-#education-nav-tabs > li > .nav-link.active {
-    font-weight: bold;
-    color: #007275;
-}
-#education-nav-tabs > li > a {
-    color: #0178cc;
-}
-#education-tab-content h5 {
-    color: #007275;
-}
-.materials-container {
-    background-color: #EEEEEE;
-}
-/* #education-container > div > .nav-tabs {
-    border-color: #CED1D8;
-}
-
-#education-container > div > .nav-tabs > li > a {
-    background-color: #EEEEEE;
-    border-bottom-color: #CED1D8;
-}
-
-#education-container > div > .nav-tabs > li > a.active {
-    background-color: #EEEEEE;
-    border-left-color: #CED1D8;
-    border-top-color: #CED1D8;
-    border-right-color: #CED1D8;
-    border-bottom-color: #EEEEEE;
-} */
